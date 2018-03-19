@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 514.5 646.7" style="enable-background:new 0 0 514.5 646.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;}
+	.st1{fill:#F3F3F3;}
+	.st2{fill:#31AABA;}
+	.st3{opacity:0.1;fill:#010101;enable-background:new    ;}
+	.st4{fill:#35B7AE;}
+	.st5{fill:url(#SVGID_1_);}
+	.st6{fill:none;}
+</style>
+<title>Asset 9</title>
+<g id="Layer_2" class="st0">
+	<g id="Layer_1-2">
+		<path class="st1" d="M257.2,444.8c-50.8,0-105.5,8.2-105.5,26.3c0,4,2.8,7.5,7.6,10.6l62.3,74.8c4.4,5.2,6.8,11.8,6.9,18.6v58.4
+			c0,9.1,14.9,13.2,28.8,13.2c13.9,0,28.8-4.1,28.8-13.2v-58.4c0-6.8,2.5-13.4,6.9-18.6l5.3-6.4h30.6c7.9,0,15.1-4.5,18-11.4l5-12.3
+			c1.9-4.6,1.2-9.8-1.9-13.7c-3.2-4.1-8.2-6.4-13.4-6.4h-1.8l20.4-24.5c4.8-3.1,7.6-6.6,7.6-10.6C362.7,453.1,308,444.8,257.2,444.8
+			z M336.5,515.1c2.1,0,4.2,0.9,5.5,2.6c1.3,1.6,1.6,3.8,0.8,5.7l-5,12.3c-1.6,3.5-5.1,5.8-9,5.7h-23.3l21.9-26.3H336.5z"/>
+		<path class="st2" d="M257.2,454.8c61.8,0,95.5,11.9,95.5,18s-33.7,18-95.5,18s-95.5-11.9-95.5-18S195.4,454.8,257.2,454.8z"/>
+		<path class="st3" d="M271.6,468c37.2,0,64.2,3.2,79.8,6.7c0.8-0.5,1.3-1.4,1.4-2.3c0-6-33.7-17.6-95.5-17.6s-95.5,11.6-95.5,17.6
+			c0,2.3,5,5.4,14.5,8.4C178.2,476.2,211.6,468,271.6,468z"/>
+		<path class="st4" d="M284.9,551.4c-5.6,6.8-8.8,15.3-8.9,24.1v58.6c-0.6,1.3-7.3,4.7-19.3,4.7s-18.7-3.3-19.3-4.4v-58.9
+			c0-8.8-3.2-17.4-8.9-24.1l-51.8-62.6c20.7,5.7,51,8.4,80,8.4s59.3-2.7,80-8.4L284.9,551.4L284.9,551.4z"/>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-859.0527" y1="128.5019" x2="-859.0327" y2="128.5519" gradientTransform="matrix(160 0 0 -91 137565.2031 12383.6699)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<path class="st5" d="M276,575.3c0-8.8,3.2-17.4,8.9-24.1l51.8-62.4c-20.7,5.7-51,8.4-80,8.4s-59.3-2.7-80-8.4l99.3,91V575.3z"/>
+		<rect class="st6" width="514.5" height="516.1"/>
+	</g>
+</g>
+</svg>

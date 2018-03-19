@@ -1,0 +1,207 @@
+@media screen and (min-width:320px) {
+  html,
+  body {
+     margin:0;
+     padding:0;
+     height:100%;
+  }
+// .Mainmenu{
+
+//   &__Logo{
+//     width:50px;
+//     height:25px;
+//   }
+
+//   &__links li > a{
+//     font-size: 16px;
+    
+//   }
+// }
+.menubar{
+  background:#f8f9f9 !important;
+  
+}
+.Groome-footer{
+  background-color:#f3f3f3;
+  position: relative;
+  bottom:0;
+  .row{
+    width:80%;
+    margin:0 auto;
+  }
+  .groom-img{
+    width:80%;
+    margin-top:30px;
+    img{
+      width:79px;
+      height:19px;
+    }
+  }
+  .content{
+    margin-top:20px;
+    p{
+      width:260px;
+      width: 260px;
+      height: 48px;
+      font-family: Nunito;
+      font-size: 18px;
+      font-weight: 600;
+      color: #4a4a4a;
+      
+    }
+
+  }
+  .footer-btn{
+    margin-top:30px;
+   
+    a{
+      
+        text-decoration:none;
+         border-radius: 4px;
+         background-color: #00c6c6;
+         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+       }
+       button{
+         border:none;
+         outline:none;
+         text-align:center;
+         background-color: #00c6c6;
+         width:100%;
+         height: 31px;
+         border-radius: 4px;
+         
+       }
+  }
+  .footer-links{
+    margin-top:30px;
+    padding-bottom:20px;
+    border-bottom:1px solid grey; 
+    a{
+      float:right;
+      height: 14px;
+      font-family: Nunito;
+      font-size: 10px;
+      color: #000000;
+      padding:5px;
+      line-height:3px;
+      
+    
+    }
+      a:not(:first-child){
+        padding-left:6px;
+        border-right:1px solid grey;
+      } 
+  }
+  .Brand{
+    margin-top:15px;
+    padding-bottom:5px; 
+    a{
+      padding-left:13px; 
+    }
+    p{
+      display:inline-block;
+      font-family: Nunito;
+      font-size: 12px;
+      width:50%;
+      color: #95989a;
+      
+span{
+  color: #00c6c6;
+  
+}    
+    }
+  }
+
+}
+}
+
+
+
+@media screen and (min-width:768px) {
+  .cd-primary-nav.is-visible{
+    display:none;
+    
+  }
+  .cd-header{
+    background-color:white;
+    .cd-logo{
+      display:block !important;
+    }
+  }
+.Groome-footer{
+.footer-btn{
+  padding-bottom:13px;
+  border-bottom:1px solid grey;
+  button{
+    width: 180px;
+    
+    height: 31px;
+  
+  }
+}
+.Brand{
+  padding-bottom:10px; 
+  a{
+    padding-left:14px;
+  }
+  p{
+    font-size:16px;
+  }
+}
+.footer-links{
+  margin-top:40px;
+  a{
+  font-size:14px;
+  }
+}
+}
+}
+
+@media screen  and (min-width:1024px){
+  .Groome-footer{
+    .footer-btn{
+button{
+  width: 243px;
+  height: 41px;
+
+}
+}
+.groom-img{
+
+  img{
+width:105px;
+height:26px;
+  }
+}
+    .content{
+      p{
+      width: 343px;
+      height: 66px;
+      font-family: NotoSans;
+      font-size: 24px;
+      }
+    }
+      
+    .footer-links{
+      margin-top:50px;
+      a{
+      font-size:18px;
+      font-family: Nunito;
+      
+      }
+  }
+  .Brand{
+    margin-top:20px;
+    padding-bottom:30px;
+    a{
+      padding-left:18px;
+    }
+    p{
+      font-size:18px;
+     
+    }
+  }
+
+}
+}
+  

@@ -1,0 +1,603 @@
+
+
+@font-face {
+    font-family: NunitoRegular;
+    src: url('../assets/fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: NotoSansRegular;
+    src: url('../assets/fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+@media screen  and (min-width:320px){
+    .operation-wrapper{
+        margin-top: 80px;
+        .banner{
+            background-image: url('../assets/images/sales/salesBanner.jpg');
+            width: 100%;
+            height: 347px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            .row{
+                width:87%;
+                margin: 0 auto;
+            }
+        }
+        .banner-left1{
+            height: 347px;
+            display: none;
+        }
+        .bannerrow{
+            width:87%;
+            margin: 0 auto;
+        }
+        .banner-right1{
+            padding-top:100px;
+            height: 347px;
+            > *{
+                margin-bottom: 30px;
+            }
+            .bannerHeading{
+                /* width: 260px; */
+           height: 27px;
+           font-family: NotoSansRegular;
+           font-size: 20px;
+           font-weight: normal;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: normal;
+           letter-spacing: normal;
+           text-align: left;
+           color: #ffffff;
+           /* margin: 0 auto; */
+           }
+           .sale-icon{
+               margin-right: 12px;
+           }
+           .sales-content{
+               font-family: NunitoRegular;
+               font-size: 16px;
+               font-weight: 200;
+               font-style: normal;
+               font-stretch: normal;
+               line-height: normal;
+               letter-spacing: normal;
+               text-align: left;
+               color: #ffffff;
+           }
+           .salesButton{
+               width: 260px;
+               margin: 0 auto;
+           }
+           .salesBtn{
+               width: 160px;
+                   height: 41px;
+                   border-radius: 4px;
+                   background-color: #00c6c6;
+                   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+                   font-family: NunitoRegular;
+                   font-size: 14px;
+                   font-weight: bold;
+                   font-style: normal;
+                   font-stretch: normal;
+                   line-height: normal;
+                   letter-spacing: normal;
+                   text-align: center;
+                   color: #ffffff;
+           }
+        }
+        .maincontent{
+            margin-top: 60px;
+        }
+        .sales-subheading{
+            font-family: NotoSansRegular;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin:0 auto;
+        }
+        .sales-subcontent{
+                 font-family: NunitoRegular;
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4a4a4a;
+                margin-bottom: 60px;
+                margin-top: 30px;
+        }
+
+
+    // Accordion for small screens (mobile first principle)
+    .tabbed-content {
+        .tabs {
+      display: block;
+    }
+    hr{
+        margin-top: 0px;
+        padding: 4px;
+    }
+    #accr-heading1{
+        border-top: 0px;
+    }
+    .tabButtonsGroup{
+        display: none;
+    }
+    .item {
+        padding-left: 15px;
+        padding-right: 15px;
+      min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+      &::before {
+        // content: attr(data-title);
+        // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+    }
+      .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want. 
+        opacity: 0;
+        display: none;
+        height: 0;
+      }
+      &.active {
+        .item-content {
+          opacity: 1;
+          display: block;
+          height:auto;
+        }
+      }
+      .accordian-heading{
+         border-top: 1px solid #f2f2f2;
+        font-family: NunitoRegular;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 12px;
+      }
+      .accor-container{
+          padding-top: 24px;
+         padding-bottom: 24px;
+         margin: 0 auto;
+      }
+    }  
+    .tab-image{
+        width: 100%;
+        height: 170px;
+      }
+    .img-mobile{
+        display: block;
+      }
+      .img-desktop{
+        display: none;
+    }
+    .accor-icon-active{
+        width: 12px;
+        height: 7px;
+        background-image: url(../assets/images/sales/accor-inact.svg);
+        float: right;
+        margin-top: 8px;
+    }
+    .accor-icon-inactive{
+        width: 12px;
+        height: 7px;
+        background-image: url(../assets/images/sales/accor-act.svg);
+        float: right;
+        margin-top: 8px;
+    }
+
+    .leftside{
+        > div{
+          margin-bottom: 30px;
+        }
+      }
+    
+      .tab-heading{
+        display: none;
+      }
+      .tab-info-title{
+        font-family: NunitoRegular;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+      }
+      .tab-info-content{
+        font-family: NunitoRegular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.83;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        margin-top: 18px;
+      }
+      .tab-info{
+          margin-top: 30px !important;
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+    
+    }  
+    }
+}
+
+
+
+@media screen  and (min-width:768px){
+    .operation-wrapper{
+    .banner-left1{
+        display: block;
+    }
+    .banner-right1{
+        .bannerHeading{
+        font-family: NotoSansRegular;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    .sales-content{
+        font-family: NunitoRegular;
+        font-size: 18px;
+        font-weight: 200;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+  
+    }
+    .sales-subheading{
+        font-family: NotoSansRegular;
+       font-size: 16px;
+       font-weight: normal;
+       font-style: normal;
+       font-stretch: normal;
+       line-height: normal;
+       letter-spacing: normal;
+       text-align: left;
+       color: #000000;
+       margin:0 auto;
+}
+    .sales-subcontent{
+        font-size: 14px;
+        
+        }
+
+    .tabbed-content {
+    .tabs {
+        display: block;
+          margin-left: 0px;
+            padding-left: 0px;
+        li {
+          display: inline-block;
+          a {
+            display: block;
+            height: 32px;
+            border-radius: 2px;
+            border: solid 1px #00c6c6;
+            line-height: 26px;
+            margin-right: 20px;
+            cursor: pointer;
+            color:black;
+            text-decoration: none;
+            > *{
+                margin-left: 7px;
+            }
+          }
+          span{
+                  width: 63px;
+                height: 17px;
+                font-family: NotoSansRegular;
+                font-size: 12px;
+                        
+            }
+            *{
+            //  margin-left: 8px;
+            }
+            .tb1{
+                width:115px;
+            }
+            .tb2{
+                        width: 122px;
+                    }
+                    .tb3{
+                        width: 122px;
+                    }
+        }
+      }
+      .tabButtonsGroup{
+        display: block;
+    }
+    .accordian-heading{
+        max-width: 460px;
+         margin: 0 auto;
+        border-top: 1px solid #f2f2f2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: NunitoRegular;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 12px;
+        display: none;
+      }
+      .tab-heading{
+        display: block;
+            font-family: NotoSansRegular;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+      }
+      .tab-info-title{
+        font-family: NunitoRegular;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+      }
+      .tab-info-content{
+          font-size: 14px;
+      }
+      .leftside{
+          > div{
+              margin-top: 20px;
+          }
+      }
+      .tab-image{
+        width: 100%;
+        margin-top: 30px;
+        height: 286px;
+      }
+      .img-desktop{
+        display: block;
+    }
+    .img-mobile{
+      display: none;
+    }
+    }
+    
+}
+}
+
+
+
+@media screen  and (min-width:1200px){
+    .operation-wrapper{
+    .banner-left1{
+        display: block;
+    }
+    .banner-right1{
+
+    .salesBtn{
+        width: 169px;
+        height: 41px;
+        font-family: NunitoRegular;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #cab18b;
+        background-color: transparent;
+        border:1px solid #cab18b;
+    }
+    .salesBtn:hover{
+            border: solid 1px #00c6c6;
+            border-radius: 0px;
+    }
+    .bannerHeading{
+        font-size: 32px;
+    }
+    .sales-content{
+        font-family:  NunitoRegular;
+        font-size: 20px;
+        font-weight: 200;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.45;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+}
+.sales-subheading{
+        font-family: NotoSansRegular;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+}
+.sales-subcontent{
+    font-family: NunitoRegular;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+    
+    // Accordion for small screens (mobile first principle)
+    .tabbed-content {
+        .tabs {
+      display: block;
+    }
+    .tabButtonsGroup{
+        display: block;
+    }
+    .item {
+        padding-left: 0px;
+        padding-right: 0px;
+      min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+      &::before {
+        // content: attr(data-title);
+        // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+    }
+      .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want. 
+        opacity: 0;
+        display: none;
+        height: 0;
+      }
+      &.active {
+        .item-content {
+          opacity: 1;
+          display: block;
+          height:auto;
+        }
+      }
+      .accordian-heading{
+        max-width: 460px;
+         margin: 0 auto;
+        border-top: 1px solid #f2f2f2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: NunitoRegular;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 12px;
+        display: none;
+      }
+      .accor-container{
+          width:260px;
+          padding-top: 24px;
+         padding-bottom: 24px;
+         margin: 0 auto;
+      }
+      
+      .rightside{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }  
+    .tab-image{
+        width: 100%;
+        margin-top: 30px;
+        height: 286px;
+      }
+      .img-desktop{
+        display: block;
+    }
+    .img-mobile{
+        display: none;
+    }
+    .accor-icon-active{
+        width: 12px;
+        height: 7px;
+        background-image: url(../assets/images/sales/accor-inact.svg);
+        float: right;
+        margin-top: 8px;
+    }
+    .accor-icon-inactive{
+        width: 12px;
+        height: 7px;
+        background-image: url(../assets/images/sales/accor-act.svg);
+        float: right;
+        margin-top: 8px;
+    }
+
+    .leftside{
+        padding-left: 30px; 
+        padding-right: 30px;
+        > div{
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+      }
+    
+      .tab-heading{
+        display: block;
+        font-family: NotoSansRegular;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+      }
+      .tab-info-title{
+        font-family: NunitoRegular;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+      }
+      .tab-info-content{
+        font-family: NunitoRegular;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.83;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        margin-top: 18px;
+      }
+      .tab-info{
+          margin-top: 30px !important;
+      }
+    
+    }  
+}
+}
+
+
+
+

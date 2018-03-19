@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Product - Sales CRM and Application Tracking System | Groome</title>
+    <link rel="icon" type="ico" href="../assets/images/favicon.ico">
+<meta name="description" content="With Groome streamline your hiring processes aligned with your sales goals. Request for a free demo now!" />
+<meta name="keywords" content="Human Recourse Management system, Hiring solution, Talent Management Software, Application Tracking System, AI-Enabled, Recruitment Management software, recruitment system, Talent CRM, HR Software, Bangalore, India" />
+<meta property="og:title" title="Product - Sales CRM and Application Tracking System | Groome" />
+<meta property="og:image" content="https://groome.co/" />
+<meta property="og:description" content="With Groome streamline your hiring processes aligned with your sales goals. Request for a free demo now!" />
+<meta property="og:url" content="https://groome.co/" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="Robots" content="index,follow">
+   
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/reset.css">
+   <link rel="stylesheet" href="/css/menu.css">
+   
+   
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="Groome - HR and Staffing solution" href="/feed.xml">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/sales.js"></script>
+    <script src="/assets/js/operation.js"></script>
+    <script src="/assets/js/recruitment.js"></script>
+    
+</head>
+<!-- 
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid Mainmenu">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><img class="Mainmenu__Logo" src="../assets/images/Groome_Logo-02.svg"/></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        
+        <ul class="nav navbar-nav navbar-right Mainmenu__links">
+          <li><a href="#"><span>Sales</span></a></li>
+          <li><a href="#"><span >Operation</span></a></li>
+          <li><a href="#"><span >Recruitment</span></a></li>
+          <li><a href="#"><span >Services</span></a></li>
+          <li><a href="#"><span >Services</span></a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <header class="cd-header">
+		<div class="cd-logo"><a href="#0"><img src="../assets/images/Groome_Logo-02.svg" alt="Logo"></a></div>
+
+		<nav>
+			<ul class="cd-secondary-nav">
+				<li><a href="/sales">Sales</a></li>
+        <li><a href="/operation">Operation</a></li>
+        <li><a href="/recruitment">Recruitment</a></li>
+        <li><a href="#0">Services</a></li>
+        <li><a><button>Request Demo</button></a></li>
+        
+        
+        
+			</ul>
+		</nav> <!-- cd-nav -->
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			
+			<li><a href="/sales">Sales</a></li>
+			<li><a href="/operation">Operations</a></li>
+			<li><a href="#0">Recruitment</a></li>
+      <li><a href="#0">Services</a></li>
+      <li><a><button>Request Demo</button></a></li>
+
+
+		</ul>
+	</nav>
+  <script>
+  jQuery(document).ready(function($){
+    //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
+    var MQL = 1170;
+  
+    //primary navigation slide-in effect
+    if($(window).width() > MQL) {
+      var headerHeight = $('.cd-header').height();
+      $(window).on('scroll',
+      {
+            previousTop: 0
+        }, 
+        function () {
+          var currentTop = $(window).scrollTop();
+          //check if user is scrolling up
+          if (currentTop < this.previousTop ) {
+            //if scrolling up...
+            if (currentTop > 0 && $('.cd-header').hasClass('is-fixed')) {
+              $('.cd-header').addClass('is-visible');
+            } else {
+              $('.cd-header').removeClass('is-visible is-fixed');
+            }
+          } else {
+            //if scrolling down...
+            $('.cd-header').removeClass('is-visible');
+            if( currentTop > headerHeight && !$('.cd-header').hasClass('is-fixed')) $('.cd-header').addClass('is-fixed');
+          }
+          this.previousTop = currentTop;
+      });
+    }
+  
+    //open/close primary navigation
+    $('.cd-primary-nav-trigger').on('click', function(){
+      $('.cd-menu-icon').toggleClass('is-clicked'); 
+      $('.cd-header,.cd-primary-nav-trigger').toggleClass('menubar');
+      $('.cd-logo').toggle();
+      
+      //in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
+      if( $('.cd-primary-nav').hasClass('is-visible') ) {
+        $('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+          $('body').removeClass('overflow-hidden');
+        });
+      } else {
+        $('.cd-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+          $('body').addClass('overflow-hidden');
+
+        });	
+      }
+    });
+  });
+  
+  
+  
+  
+</script>
+  
+<body>
+
+<div class="sales-wrapper">
+    <!-- <div class="salesBanner row">
+        <div class=" col-xs-12 col-sm-6 col-sm-push-6 col-md-6 col-lg-6 sales-banner-content">
+
+            <div class=" bannerHeading">
+                <img src="/assets/images/sales/saleIcon.svg" class="sale-icon">
+                <span>Sales</span>
+            </div>
+            <div>
+                <div class="sales-content">
+                    Build talent pools, power collaboration and drive better decisions with predictive analytics.
+                </div>
+            </div>
+            <div class="salesButton">
+                <button class="btn salesBtn">
+                    Request Demo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-subheading">
+        Accelerate Passive recruiting
+    </div>
+
+    <div class="sales-subcontent">
+        Beamery’s Talent CRM lets companies engage with passive candidates long before they apply. Deeply integrated with all of
+        your other recruiting systems, Beamery is your single source of truth for every candidate relationship, tracking
+        every touchpoint with your business, and enabling your team to make talent a strategic advantage and significantly
+        reduce hiring cycles.
+    </div>
+    
+
+
+
+    <article class="tabbed-content">
+        <nav class="tabs">
+            <ul>
+                <li>
+                    <a href="#tab1" class="active tb1">
+                        <img src="/assets/images/email.png">
+                        <span>Leads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab2" class="tb2">
+                        <img src="/assets/images/email.png">
+                        <span>Collaboration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab3" class="tb3">
+                        <img src="/assets/images/email.png">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="tab1" class="item active" data-title="Tab 1">
+            <div class="accordian-heading">
+                <div class="accor-container">
+                <span>Leads</span>
+                <span class="accor-icon-active">
+                    </span>
+                </div>
+            </div>
+            <div class="item-content row">
+                <div id="accr-text-1" class="col-sm-6 col-xs-12 leftside">
+                    <div class="tab-heading">
+                        Maximise lead to conversion ratio
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                            Uncover insights, know your priority
+                        </div>
+
+                        <div class="tab-info-content">
+                            Prioritize on quality leads, pursue what matters and focus on opportunities which get converted instantly.
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                            Track and follow-up on every deal
+                        </div>
+
+                        <div class="tab-info-content">
+                            Stay up to date on all your leads. Identify leads that need your attention, know where they are at and what's next for them.
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                            Set, manage and achieve your targets
+                        </div>
+
+                        <div class="tab-info-content">
+                                Measure your company’s talent deficit gap, set realistic targets and close winning deals to bring perfect balance.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="accr-img-1" class="col-sm-6 col-xs-12 rightside">
+                    <img class="tab-image" src="">
+                </div>
+            </div>
+        </section>
+        <section id="tab2" class="item" data-title="Tab 2">
+            <div class="accordian-heading">
+                    <div class="accor-container">
+                <span>Collaboration</span>
+                <span class="accor-icon-inactive">
+                    </span>
+                    </div>
+            </div>
+            <div class="item-content row">
+                <div id="accr-text-2" class="col-sm-6 col-xs-12 leftside">
+                    <div class="tab-heading">
+                            Collaborate in real time
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Manage workflows, have relevant conversations
+                        </div>
+
+                        <div class="tab-info-content">
+                                View multiple opportunities for a single lead. Manage each of them across their stages from discovery to win.
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Schedule meetings, get smarter in your follow up
+                        </div>
+
+                        <div class="tab-info-content">
+                                Meet clients on the go. Document your conversations to drive relevant engagements with them and push your leads to a winning closure.
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Team up on tasks to set up streamlined ‘events’
+                        </div>
+
+                        <div class="tab-info-content">
+                                Collaborate on tasks and deliver successful customer demos. Never lose an opportunity and make every conversation count.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="accr-img-2" class="col-sm-6 col-xs-12 rightside">
+                    <div class="tab-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tab3" class="item" data-title="Tab 3">
+            <div class="accordian-heading">
+                    <div class="accor-container">
+                <span>Dashboard</span>
+                <span class="accor-icon-inactive">
+                    </span>
+                    </div>
+            </div>
+            <div class="item-content row">
+                <div id="accr-text-3" class="col-sm-6 col-xs-12 leftside">
+                    <div class="tab-heading">
+                            Run customer centric business
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Gain intelligence on your customer sentiments
+                        </div>
+
+                        <div class="tab-info-content">
+                                Sense your customer’s pulse. Understand which opportunities will come through and build your sales pipeline.
+
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Cherry pick leads, make deals
+                        </div>
+
+                        <div class="tab-info-content">
+                                Pick leads which are ready to be cracked and keep an eye on those stale leads before they are lost.
+                        </div>
+                    </div>
+                    <div class="row tab-info">
+                        <div class="tab-info-title">
+                                Capture your customer needs in a single view
+                        </div>
+
+                        <div class="tab-info-content">
+                                Track multiple opportunities for single lead. Have information available at your finger tips on your what the customer needs.
+                        </div>
+                    </div>
+                </div>
+                <div id="accr-img-3" class="col-sm-6 col-xs-12 rightside">
+                    <div class="tab-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article> -->
+
+
+
+<!-- New Version starts -->
+
+
+
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-6 col-md-6">
+
+                    </div> 
+                    <div class="col-xs-12 col-sm-6 col-md-6 banner-right1">
+                            <div class=" bannerHeading">
+                                    <img src="/assets/images/sales/saleIcon.svg" class="sale-icon">
+                                    <span>Sales</span>
+                                </div>
+                                
+                                    <div class="sales-content">
+                                        Build talent pools, power collaboration and drive better decisions with predictive analytics.
+                                    </div>
+                            
+                                
+                                    <button class="btn salesBtn">
+                                        Request Demo
+                                    </button>
+                            
+                    </div>
+                </div>
+
+                </div>
+            </div>
+           
+
+             <div class="maincontent">
+                <div class="container">
+                        <div class="row bannerrow">
+                            <div class="col-xs-12 sales-subheading">
+                                    Accelerate Passive recruiting
+                            </div>
+                            <div class="col-xs-12 sales-subcontent">
+                                    Beamery’s Talent CRM lets companies engage with passive candidates long before they apply. Deeply integrated with all of
+                                    your other recruiting systems, Beamery is your single source of truth for every candidate relationship, tracking
+                                    every touchpoint with your business, and enabling your team to make talent a strategic advantage and significantly
+                                    reduce hiring cycles.
+                            </div>
+                            <div class="tabbed-content">
+
+                                <div class="col-xs-12 tabButtonsGroup">
+
+                                        <nav class="tabs">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#tab1" class="active tb1">
+                                                            <i class="fas fa-users"></i>
+                                                            <span>Leads</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab2" class="tb2">
+                                                            <i class="fas fa-users"></i>
+                                                            <span>Collaboration</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#tab3" class="tb3">
+                                                            <i class="fas fa-users"></i>
+                                                            <span>Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                 </div>
+
+                            
+                            <section id="tab1" class="item active" data-title="Tab 1">
+                                <div class="accordian-heading" id="accr-heading1">
+                                    <div class="accor-container">
+                                       <hr>
+                                    <span>Leads</span>
+                                    <span class="accor-icon-active">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item-content row">
+                                    <div id="accr-text-1" class="col-sm-6 col-xs-12 leftside">
+                                        <div class="tab-heading">
+                                            Maximise lead to conversion ratio
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                Uncover insights, know your priority
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                Prioritize on quality leads, pursue what matters and focus on opportunities which get converted instantly.
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                Track and follow-up on every deal
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                Stay up to date on all your leads. Identify leads that need your attention, know where they are at and what's next for them.
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                Set, manage and achieve your targets
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Measure your company’s talent deficit gap, set realistic targets and close winning deals to bring perfect balance.
+                                            </div>
+                                        </div>
+                    
+                    
+                                    </div>
+                                    <div id="accr-img-1" class="col-sm-6 col-xs-12 rightside">
+                                        <img class="tab-image img-desktop" src="/assets/images/sales/sales-tab-dektop.jpg">
+                                        <img class="tab-image img-mobile" src="/assets/images/sales/accor-img-mobile.jpg">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="tab2" class="item" data-title="Tab 2">
+                                <div class="accordian-heading">
+                                        <div class="accor-container">
+                                               
+                                    <span>Collaboration</span>
+                                    <span class="accor-icon-inactive">
+                                        </span>
+                                        </div>
+                                </div>
+                                <div class="item-content row">
+                                    <div id="accr-text-2" class="col-sm-6 col-xs-12 leftside">
+                                        <div class="tab-heading">
+                                                Collaborate in real time
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Manage workflows, have relevant conversations
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    View multiple opportunities for a single lead. Manage each of them across their stages from discovery to win.
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Schedule meetings, get smarter in your follow up
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Meet clients on the go. Document your conversations to drive relevant engagements with them and push your leads to a winning closure.
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Team up on tasks to set up streamlined ‘events’
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Collaborate on tasks and deliver successful customer demos. Never lose an opportunity and make every conversation count.
+                                            </div>
+                                        </div>
+                    
+                    
+                                    </div>
+                                    <div id="accr-img-2" class="col-sm-6 col-xs-12 rightside">
+                                        <img class="tab-image img-desktop" src="/assets/images/sales/sales-tab-dektop.jpg">
+                                        <img class="tab-image img-mobile" src="/assets/images/sales/accor-img-mobile.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="tab3" class="item" data-title="Tab 3">
+                                <div class="accordian-heading">
+                                        <div class="accor-container">
+                                               
+                                    <span>Dashboard</span>
+                                    <span class="accor-icon-inactive">
+                                        </span>
+                                        </div>
+                                </div>
+                                <div class="item-content row">
+                                    <div id="accr-text-3" class="col-sm-6 col-xs-12 leftside">
+                                        <div class="tab-heading">
+                                                Run customer centric business
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Gain intelligence on your customer sentiments
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Sense your customer’s pulse. Understand which opportunities will come through and build your sales pipeline.
+                    
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Cherry pick leads, make deals
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Pick leads which are ready to be cracked and keep an eye on those stale leads before they are lost.
+                                            </div>
+                                        </div>
+                                        <div class="row tab-info">
+                                            <div class="tab-info-title">
+                                                    Capture your customer needs in a single view
+                                            </div>
+                    
+                                            <div class="tab-info-content">
+                                                    Track multiple opportunities for single lead. Have information available at your finger tips on your what the customer needs.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="accr-img-3" class="col-sm-6 col-xs-12 rightside">
+                                        <img class="tab-image img-desktop" src="/assets/images/sales/sales-tab-dektop.jpg">
+                                        <img class="tab-image img-mobile" src="/assets/images/sales/accor-img-mobile.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            
+                        </div>
+                         </div>
+                </div>
+            </div>
+
+
+</div>
+<footer class="Groome-footer">
+    <div class="row">
+        <div class="groom-img  col-xs-12">
+        <img src="../assets/images/Groome_Logo-02.svg"/>
+    </div>
+<div class="content col-xs-12">
+    <p>Integrate and streamline your 
+      people operations</p>
+ </div>
+ 
+ <div class="footer-btn col-xs-12 col-sm-6">
+        <a><button>Request Demo</button></a>
+     </div>
+            
+    <div class="footer-links col-xs-12 col-sm-6">
+            <a  href="#">Services</a>
+            <a href="#">Recruitment</a>     
+            <a   href="#">Operation</a>
+            <a href="#">Sales</a>  
+     </div>
+     <div class="col-xs-12 Brand">
+
+        <p>Product of <span> hashworks.co</span></p>
+        <div class="pull-right">
+        <a href="#"><span><i class="fab fa-linkedin 2x"></i></span></a>
+        <a href="#"><span><i class="fab fa-facebook 2x"></i></span></a>
+        <a href="#"><span><i class="fab fa-twitter 2x"></i></span></a>
+        </div>
+        
+     </div>
+
+
+    </div>
+
+</footer>
+</body>
+
+
+
+
+</html>
+
+
+<!-- <div class=" Groome-footer__wrap">
+    
+       </div>
+       <div class="Groome-footer__footer-content">
+       <p>Integrate and streamline your 
+        people operations</p>
+    
+       </div>
+       <div class="Groome-footer__Demo">
+          <a><button>Request Demo</button></a>
+       </div>
+       <div class="Groome-footer__Grouplinks">
+         <!-- <a  class="col-xs-2" href="#">Sales</a>  font-size: 10px;
+
+         <a  class="col-xs-3" href="#">Operation</a>
+         <a  class="col-xs-3" href="#">Recruitment</a> -->
+         <!-- <div class="col-xs-12">
+         <a  class="col-xs-2" href="#">Services</a>
+         <a  class="col-xs-3" href="#">Recruitment</a>     
+         <a  class="col-xs-3" href="#">Operation</a>
+         <a  class="col-xs-2" href="#">Sales</a>   
+         </div> 
+         <div class="last-wrapper">
+         <div class="col-xs-7 ">
+           <p>Product of <span>hashworks.co</span></p>
+        
+         </div>
+         <div class="col-xs-5">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            </div>
+            </div> -->
+          <!-- </div> --> 

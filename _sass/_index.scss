@@ -1,0 +1,51 @@
+@media screen  and (min-width:320px){
+    .HomePage{
+        margin-top:50px;
+        .row{
+            width:210px;
+            margin:0 auto;
+        }
+        .banner-img{
+            width:210px;
+            height:143px;
+            background-image:url('/assets/images/cover-image.jpg');
+        }
+        .banner-content{
+            height:81px;
+         width:188px;
+         margin:0 auto;
+         margin-top:30px;
+         
+         p{
+            font-family: NotoSans;
+            font-size: 22px;
+            color: #000000;
+            text-align:center;
+            span{
+                color: #00c6c6;
+                
+            }
+         }
+        }
+        .info{
+            margin-top:20px;
+            .row{
+                width:280px;
+                p{
+                    font-family: Nunito;
+                    font-size: 16px;
+                    font-weight: 200;
+                    text-align:center;
+                    color: #4a4a4a;
+                    
+                }
+            }
+        }
+        .banner-btn{
+            .row{
+                width:210px;
+                margin:0 auto;
+            }
+        }
+    }
+}
